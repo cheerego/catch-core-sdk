@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package player;
+service player {
+    rpc reg (regRequest) returns (regReply) {
+    }
+    rpc ping (pingRequest) returns (pingReply) {
+    }
+}
+
+message regRequest {
+    string appid = 1;
+    string uid = 2;
+}
+
+message regReply {
+    int32 ret = 1;
+    string message = 2;
+    string response = 3;
+}
+
+
+
+message pingRequest {
+    string name = 1;
+}
+message pingReply {
+    string message = 2;
+}
