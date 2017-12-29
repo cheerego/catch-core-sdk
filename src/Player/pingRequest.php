@@ -13,36 +13,10 @@ use Google\Protobuf\Internal\GPBUtil;
  */
 class pingRequest extends \Google\Protobuf\Internal\Message
 {
-    /**
-     * Generated from protobuf field <code>string name = 1;</code>
-     */
-    private $name = '';
 
     public function __construct() {
         \GPBMetadata\Player::initOnce();
         parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>string name = 1;</code>
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * Generated from protobuf field <code>string name = 1;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setName($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->name = $var;
-
-        return $this;
     }
 
 }

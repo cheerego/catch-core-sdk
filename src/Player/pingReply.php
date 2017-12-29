@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class pingReply extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string message = 2;</code>
+     * Generated from protobuf field <code>string message = 1;</code>
      */
     private $message = '';
 
@@ -24,7 +24,7 @@ class pingReply extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string message = 2;</code>
+     * Generated from protobuf field <code>string message = 1;</code>
      * @return string
      */
     public function getMessage()
@@ -33,7 +33,7 @@ class pingReply extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string message = 2;</code>
+     * Generated from protobuf field <code>string message = 1;</code>
      * @param string $var
      * @return $this
      */

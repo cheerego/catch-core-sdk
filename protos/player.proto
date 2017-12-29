@@ -22,8 +22,8 @@ message regReply {
 
 
 message pingRequest {
-    string name = 1;
 }
+
 message pingReply {
-    string message = 2;
+    string message = 1;
 }
