@@ -1,5 +1,5 @@
 {
-    "name": "catchme/catch-core-sdk",
+    "name": "catchme/catch-grpc-sdk",
     "license": "proprietary",
     "type": "library",
     "description": "",
