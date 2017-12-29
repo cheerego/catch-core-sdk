@@ -1,0 +1,21 @@
+{
+    "name": "catchme/catch-core-sdk",
+    "license": "proprietary",
+    "type": "library",
+    "description": "",
+    "authors": [
+        {
+            "name": "placeless",
+            "email": "placeless@catchme.com.cn"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "./src"
+        ]
+    },
+    "require": {
+        "google/protobuf": "^3.5",
+        "grpc/grpc": "^1.6"
+    }
+}
