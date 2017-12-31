@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "65ee488681b7a3dd1eed12cee4aa9f6d",
+    "content-hash": "42afa9eeffad46cffdc1fa83669785f2",
     "packages": [
         {
             "name": "google/protobuf",
-            "version": "v3.5.1",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/protobuf.git",
-                "reference": "106ffc04be1abf3ff3399f54ccf149815b287dd9"
+                "reference": "80a37e0782d2d702d52234b62dd4b9ec74fd2c95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/google/protobuf/106ffc04be1abf3ff3399f54ccf149815b287dd9.zip",
-                "reference": "106ffc04be1abf3ff3399f54ccf149815b287dd9",
+                "url": "https://files.phpcomposer.com/files/google/protobuf/80a37e0782d2d702d52234b62dd4b9ec74fd2c95.zip",
+                "reference": "80a37e0782d2d702d52234b62dd4b9ec74fd2c95",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
             "keywords": [
                 "proto"
             ],
-            "time": "2017-12-20T23:07:13+00:00"
+            "time": "2017-08-15T23:39:12+00:00"
         },
         {
             "name": "grpc/grpc",
