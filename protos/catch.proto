@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package catch;
+service catch {
+    rpc ping (pingRequest) returns (pingReply) {
+    }
+
+    rpc reg (regRequest) returns (regReply) {
+    }
+
+}
+
+message pingRequest {
+
+}
+message pingReply {
+    string message = 1;
+}
+
+
+message regRequest {
+    string appid = 1;
+    string uid = 2;
+}
+
+message regReply {
+    int32 ret = 1;
+    string message = 2;
+    string response = 3;
+}
+
+
+
