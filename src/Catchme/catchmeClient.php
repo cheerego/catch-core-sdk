@@ -1,11 +1,11 @@
 <?php
 // GENERATED CODE -- DO NOT EDIT!
 
-namespace Catch;
+namespace Catchme;
 
 /**
  */
-class catchClient extends \Grpc\BaseStub {
+class catchmeClient extends \Grpc\BaseStub {
 
     /**
      * @param string $hostname hostname
@@ -17,28 +17,28 @@ class catchClient extends \Grpc\BaseStub {
     }
 
     /**
-     * @param \Catch\PingRequest $argument input argument
+     * @param \Catchme\PingRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function ping(\Catch\PingRequest $argument,
+    public function ping(\Catchme\PingRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/catch.catch/ping',
+        return $this->_simpleRequest('/catchme.catchme/ping',
         $argument,
-        ['\Catch\PingReply', 'decode'],
+        ['\Catchme\PingReply', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Catch\RegRequest $argument input argument
+     * @param \Catchme\RegRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function reg(\Catch\RegRequest $argument,
+    public function reg(\Catchme\RegRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/catch.catch/reg',
+        return $this->_simpleRequest('/catchme.catchme/reg',
         $argument,
-        ['\Catch\RegReply', 'decode'],
+        ['\Catchme\RegReply', 'decode'],
         $metadata, $options);
     }
 
