@@ -14,13 +14,13 @@ use Google\Protobuf\Internal\GPBUtil;
 class regRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string appid = 1;</code>
+     * Generated from protobuf field <code>string app_id = 1;</code>
      */
-    private $appid = '';
+    private $app_id = '';
     /**
-     * Generated from protobuf field <code>string uid = 2;</code>
+     * Generated from protobuf field <code>string app_uid = 2;</code>
      */
-    private $uid = '';
+    private $app_uid = '';
     /**
      * Generated from protobuf field <code>string gender = 3;</code>
      */
@@ -36,45 +36,45 @@ class regRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string appid = 1;</code>
+     * Generated from protobuf field <code>string app_id = 1;</code>
      * @return string
      */
-    public function getAppid()
+    public function getAppId()
     {
-        return $this->appid;
+        return $this->app_id;
     }
 
     /**
-     * Generated from protobuf field <code>string appid = 1;</code>
+     * Generated from protobuf field <code>string app_id = 1;</code>
      * @param string $var
      * @return $this
      */
-    public function setAppid($var)
+    public function setAppId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->appid = $var;
+        $this->app_id = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>string uid = 2;</code>
+     * Generated from protobuf field <code>string app_uid = 2;</code>
      * @return string
      */
-    public function getUid()
+    public function getAppUid()
     {
-        return $this->uid;
+        return $this->app_uid;
     }
 
     /**
-     * Generated from protobuf field <code>string uid = 2;</code>
+     * Generated from protobuf field <code>string app_uid = 2;</code>
      * @param string $var
      * @return $this
      */
-    public function setUid($var)
+    public function setAppUid($var)
     {
         GPBUtil::checkString($var, True);
-        $this->uid = $var;
+        $this->app_uid = $var;
 
         return $this;
     }
