@@ -21,6 +21,14 @@ class regRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string uid = 2;</code>
      */
     private $uid = '';
+    /**
+     * Generated from protobuf field <code>string gender = 3;</code>
+     */
+    private $gender = '';
+    /**
+     * Generated from protobuf field <code>string nickname = 4;</code>
+     */
+    private $nickname = '';
 
     public function __construct() {
         \GPBMetadata\Catchme::initOnce();
@@ -67,6 +75,50 @@ class regRequest extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->uid = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string gender = 3;</code>
+     * @return string
+     */
+    public function getGender()
+    {
+        return $this->gender;
+    }
+
+    /**
+     * Generated from protobuf field <code>string gender = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setGender($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->gender = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string nickname = 4;</code>
+     * @return string
+     */
+    public function getNickname()
+    {
+        return $this->nickname;
+    }
+
+    /**
+     * Generated from protobuf field <code>string nickname = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setNickname($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->nickname = $var;
 
         return $this;
     }

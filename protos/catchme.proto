@@ -21,6 +21,8 @@ message pingReply {
 message regRequest {
     string appid = 1;
     string uid = 2;
+    string gender = 3;
+    string nickname = 4;
 }
 
 message regReply {
