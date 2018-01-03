@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package catchme;
+package business;
 
-service catchme {
+service Business {
 
     rpc Login (LoginRequest) returns (CommonReply) {}       //注册或登录
     rpc PlayGame (PlayRequest) returns (CommonReply) {}     //开始游戏
