@@ -14,17 +14,17 @@ use Google\Protobuf\Internal\GPBUtil;
 class PlayRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string app_key = 1;</code>
+     * Generated from protobuf field <code>string key = 1;</code>
      */
-    private $app_key = '';
+    private $key = '';
     /**
-     * Generated from protobuf field <code>string open_id = 2;</code>
+     * Generated from protobuf field <code>string openId = 2;</code>
      */
-    private $open_id = '';
+    private $openId = '';
     /**
-     * Generated from protobuf field <code>string room_id = 3;</code>
+     * Generated from protobuf field <code>string roomId = 3;</code>
      */
-    private $room_id = '';
+    private $roomId = '';
 
     public function __construct() {
         \GPBMetadata\Business::initOnce();
@@ -32,67 +32,67 @@ class PlayRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string app_key = 1;</code>
+     * Generated from protobuf field <code>string key = 1;</code>
      * @return string
      */
-    public function getAppKey()
+    public function getKey()
     {
-        return $this->app_key;
+        return $this->key;
     }
 
     /**
-     * Generated from protobuf field <code>string app_key = 1;</code>
+     * Generated from protobuf field <code>string key = 1;</code>
      * @param string $var
      * @return $this
      */
-    public function setAppKey($var)
+    public function setKey($var)
     {
         GPBUtil::checkString($var, True);
-        $this->app_key = $var;
+        $this->key = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>string open_id = 2;</code>
+     * Generated from protobuf field <code>string openId = 2;</code>
      * @return string
      */
     public function getOpenId()
     {
-        return $this->open_id;
+        return $this->openId;
     }
 
     /**
-     * Generated from protobuf field <code>string open_id = 2;</code>
+     * Generated from protobuf field <code>string openId = 2;</code>
      * @param string $var
      * @return $this
      */
     public function setOpenId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->open_id = $var;
+        $this->openId = $var;
 
         return $this;
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 3;</code>
+     * Generated from protobuf field <code>string roomId = 3;</code>
      * @return string
      */
     public function getRoomId()
     {
-        return $this->room_id;
+        return $this->roomId;
     }
 
     /**
-     * Generated from protobuf field <code>string room_id = 3;</code>
+     * Generated from protobuf field <code>string roomId = 3;</code>
      * @param string $var
      * @return $this
      */
     public function setRoomId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->room_id = $var;
+        $this->roomId = $var;
 
         return $this;
     }

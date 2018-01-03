@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package business;
 
-service Business {
+service business {
 
     rpc Login (LoginRequest) returns (CommonReply) {}       //注册或登录
     rpc PlayGame (PlayRequest) returns (CommonReply) {}     //开始游戏
@@ -16,22 +16,18 @@ message CommonReply {
 }
 
 message LoginRequest {
-    string app_key = 1;
+    string key = 1;
     int32 uid = 2;
     string nickname = 3;
     string avatar = 4;
-    enum Gender {
-        F = 0;
-        M = 1;
-    }
-    Gender gender = 5;
+    string gender = 5;
     string mobile = 6;
 }
 
 message PlayRequest {
-    string app_key = 1;
-    string open_id = 2;
-    string room_id = 3;
+    string key = 1;
+    string openId = 2;
+    string roomId = 3;
 }
 
 

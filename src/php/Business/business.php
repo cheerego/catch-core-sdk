@@ -6,7 +6,7 @@ namespace Business;
 
 /**
  */
-interface Business
+interface business
 {
   /**
    * @param \Business\LoginRequest $argument input argument

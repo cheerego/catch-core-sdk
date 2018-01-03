@@ -14,9 +14,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class LoginRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string app_key = 1;</code>
+     * Generated from protobuf field <code>string key = 1;</code>
      */
-    private $app_key = '';
+    private $key = '';
     /**
      * Generated from protobuf field <code>int32 uid = 2;</code>
      */
@@ -30,9 +30,9 @@ class LoginRequest extends \Google\Protobuf\Internal\Message
      */
     private $avatar = '';
     /**
-     * Generated from protobuf field <code>.business.LoginRequest.Gender gender = 5;</code>
+     * Generated from protobuf field <code>string gender = 5;</code>
      */
-    private $gender = 0;
+    private $gender = '';
     /**
      * Generated from protobuf field <code>string mobile = 6;</code>
      */
@@ -44,23 +44,23 @@ class LoginRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string app_key = 1;</code>
+     * Generated from protobuf field <code>string key = 1;</code>
      * @return string
      */
-    public function getAppKey()
+    public function getKey()
     {
-        return $this->app_key;
+        return $this->key;
     }
 
     /**
-     * Generated from protobuf field <code>string app_key = 1;</code>
+     * Generated from protobuf field <code>string key = 1;</code>
      * @param string $var
      * @return $this
      */
-    public function setAppKey($var)
+    public function setKey($var)
     {
         GPBUtil::checkString($var, True);
-        $this->app_key = $var;
+        $this->key = $var;
 
         return $this;
     }
@@ -132,8 +132,8 @@ class LoginRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.business.LoginRequest.Gender gender = 5;</code>
-     * @return int
+     * Generated from protobuf field <code>string gender = 5;</code>
+     * @return string
      */
     public function getGender()
     {
@@ -141,13 +141,13 @@ class LoginRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.business.LoginRequest.Gender gender = 5;</code>
-     * @param int $var
+     * Generated from protobuf field <code>string gender = 5;</code>
+     * @param string $var
      * @return $this
      */
     public function setGender($var)
     {
-        GPBUtil::checkEnum($var, \Business\LoginRequest_Gender::class);
+        GPBUtil::checkString($var, True);
         $this->gender = $var;
 
         return $this;

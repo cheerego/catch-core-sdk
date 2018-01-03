@@ -6,7 +6,7 @@ namespace Business;
 
 /**
  */
-class BusinessClient extends \Grpc\BaseStub implements Business
+class businessClient extends \Grpc\BaseStub implements business
 {
   /**
    * @param string $hostname hostname
@@ -25,7 +25,7 @@ class BusinessClient extends \Grpc\BaseStub implements Business
    */
   public function Login(\Business\LoginRequest $argument, $metadata = [], $options = []) : \Business\CommonReply
   {
-    return $this->_simpleRequest('/business.Business/Login', $argument, ['\Business\CommonReply', 'decode'], $metadata, $options);
+    return $this->_simpleRequest('/business.business/Login', $argument, ['\Business\CommonReply', 'decode'], $metadata, $options);
   }
 
   /**
@@ -35,7 +35,7 @@ class BusinessClient extends \Grpc\BaseStub implements Business
    */
   public function PlayGame(\Business\PlayRequest $argument, $metadata = [], $options = []) : \Business\CommonReply
   {
-    return $this->_simpleRequest('/business.Business/PlayGame', $argument, ['\Business\CommonReply', 'decode'], $metadata, $options);
+    return $this->_simpleRequest('/business.business/PlayGame', $argument, ['\Business\CommonReply', 'decode'], $metadata, $options);
   }
 
 }
