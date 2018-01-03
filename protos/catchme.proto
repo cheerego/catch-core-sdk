@@ -1,35 +1,41 @@
 syntax = "proto3";
 
 package catchme;
+
 service catchme {
-    rpc ping (pingRequest) returns (pingReply) {
-    }
 
-    rpc reg (regRequest) returns (regReply) {
-    }
+    rpc Login (LoginRequest) returns (CommonReply) {}       //注册或登录
+    rpc PlayGame (PlayRequest) returns (CommonReply) {}     //开始游戏
 
 }
 
-message pingRequest {
-
-}
-message pingReply {
-    string message = 1;
-}
-
-
-message regRequest {
-    string app_id = 1;
-    string app_uid = 2;
-    string gender = 3;
-    string nickname = 4;
-}
-
-message regReply {
+message CommonReply {
     int32 ret = 1;
     string message = 2;
     string response = 3;
 }
+
+message LoginRequest {
+    string app_key = 1;
+    int32 uid = 2;
+    string nickname = 3;
+    string avatar = 4;
+    enum Gender {
+        F = 0;
+        M = 1;
+    }
+    Gender gender = 5;
+    string mobile = 6;
+}
+
+message PlayRequest {
+    string app_key = 1;
+    string open_id = 2;
+    string room_id = 3;
+}
+
+
+
 
 
 

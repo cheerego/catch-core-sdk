@@ -18,13 +18,13 @@ require 'vendor/autoload.php';
 //print_r($data);
 
 
-$client = new \Ping\pingClient('127.0.0.1:50052',[
+/*$client = new \Ping\pingClient('127.0.0.1:50052',[
     'credentials' => Grpc\ChannelCredentials::createInsecure()
 ]);
 
 $r = new \Ping\pingRequest();
 $data = $client->ping($r)->wait();
-var_dump($data);
+var_dump($data);*/
 
 //$client = new \Helloworld\helloworldClient('127.0.0.1:50052',[
 //    'credentials' => Grpc\ChannelCredentials::createInsecure()

@@ -9,9 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>catchme.regReply</code>
+ * Generated from protobuf message <code>catchme.CommonReply</code>
  */
-class regReply extends \Google\Protobuf\Internal\Message
+class CommonReply extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>int32 ret = 1;</code>
