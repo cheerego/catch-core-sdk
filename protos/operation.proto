@@ -1,0 +1,76 @@
+syntax = "proto3";
+
+package operation;
+
+service operation {
+
+   rpc Launch(LaunchRequest) returns(CommonReply);
+
+   rpc Unlimited(LaunchRequest) returns(CommonReply);
+
+   rpc Operate(OperateRequest) returns(CommonReply);
+
+   rpc Broadcast(BroadcastRequest) returns(CommonReply);
+
+   rpc Search(SearchRequest) returns(CommonReply);
+}
+
+message LaunchRequest{
+    string deviceName = 1;
+    int32 playerId  = 2;
+    int32 score = 3;
+    string force = 4;
+}
+
+message UnlimitedRequest{
+    string deviceName = 1;
+    int32 playerId  = 2;
+    int32 score = 3;
+}
+
+message OperateRequest{
+    string deviceName = 1;
+    enum Options {
+        REBOOT = 0;
+        SETTING = 1;
+        STOP = 2;
+    }
+    Options option = 2;
+    string data = 3;
+}
+
+message BroadcastRequest{
+    string productKey = 1;
+    string topic = 2;
+    enum Options {
+        ROOMIDEL = 0;
+        ROOMPEOPLE = 1;
+    }
+    Options option = 3;
+    string data = 4;
+}
+
+message SearchRequest{
+    string deviceName = 1;
+    enum Options {
+        ACCOUNT = 0;
+        SETTING = 1;
+        STATUS = 2;
+        SHADOW = 3;
+        BATCHSTATE = 4;
+        INFO = 5;
+    }
+    Options option = 2;
+    enum Type {
+         SERVER = 0;
+         LOCAL = 1;
+    }
+    Type type = 3;
+}
+
+message CommonReply {
+    int32 ret = 1;
+    string message = 2;
+    string response = 3;
+}
+
