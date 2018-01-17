@@ -30,11 +30,11 @@ class operationClient extends \Grpc\BaseStub {
     }
 
     /**
-     * @param \Operation\LaunchRequest $argument input argument
+     * @param \Operation\UnlimitedRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function Unlimited(\Operation\LaunchRequest $argument,
+    public function Unlimited(\Operation\UnlimitedRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/operation.operation/Unlimited',
         $argument,
