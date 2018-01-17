@@ -10,9 +10,9 @@ namespace Operation;
 class BroadcastRequest_Options
 {
     /**
-     * Generated from protobuf enum <code>ROOMIDEL = 0;</code>
+     * Generated from protobuf enum <code>ROOMIDLE = 0;</code>
      */
-    const ROOMIDEL = 0;
+    const ROOMIDLE = 0;
     /**
      * Generated from protobuf enum <code>ROOMPEOPLE = 1;</code>
      */
