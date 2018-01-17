@@ -34,7 +34,20 @@ class operationClient extends \Grpc\BaseStub {
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function Unlimited(\Operation\LaunchRequest $argument,
+    public function LaunchPlain(\Operation\LaunchRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/operation.operation/LaunchPlain',
+        $argument,
+        ['\Operation\CommonReply', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * @param \Operation\UnlimitedRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function Unlimited(\Operation\UnlimitedRequest $argument,
       $metadata = [], $options = []) {
         return $this->_simpleRequest('/operation.operation/Unlimited',
         $argument,

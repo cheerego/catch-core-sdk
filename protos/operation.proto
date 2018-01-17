@@ -6,6 +6,8 @@ service operation {
 
    rpc Launch(LaunchRequest) returns(CommonReply);
 
+   rpc LaunchPlain(LaunchRequest) returns(CommonReply);
+
    rpc Unlimited(UnlimitedRequest) returns(CommonReply);
 
    rpc Operate(OperateRequest) returns(CommonReply);
