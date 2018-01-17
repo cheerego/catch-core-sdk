@@ -45,7 +45,7 @@ message BroadcastRequest{
     string productKey = 1;
     string topic = 2;
     enum Options {
-        ROOMIDEL = 0;
+        ROOMIDLE = 0;
         ROOMPEOPLE = 1;
         PLAYING = 2;
     }
