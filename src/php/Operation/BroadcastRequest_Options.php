@@ -17,5 +17,9 @@ class BroadcastRequest_Options
      * Generated from protobuf enum <code>ROOMPEOPLE = 1;</code>
      */
     const ROOMPEOPLE = 1;
+    /**
+     * Generated from protobuf enum <code>PLAYING = 2;</code>
+     */
+    const PLAYING = 2;
 }
 

@@ -47,6 +47,7 @@ message BroadcastRequest{
     enum Options {
         ROOMIDEL = 0;
         ROOMPEOPLE = 1;
+        PLAYING = 2;
     }
     Options option = 3;
     string data = 4;
